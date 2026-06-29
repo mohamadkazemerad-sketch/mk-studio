@@ -1,5 +1,5 @@
 import "./style.css";
-// import "./three/scene.js";
+import "./three/scene.js";
 
 
 const header = document.querySelector("header");
@@ -77,3 +77,5 @@ reveals.forEach(section=>{
     observer.observe(section);
 
 });
+
+console.log("MK Studio loaded")
