@@ -3209,3 +3209,55 @@ section{
     opacity:1 !important;
     transform:none !important;
 }
+
+.project-image{
+
+    width:100%;
+    max-width:1000px;
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    display:block;
+
+    margin:50px auto;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,0.45);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+}
+
+.project-page{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:80px 20px;
+
+}
+
+
+.project-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+@media(max-width:768px){
+
+.project-image{
+
+    height:260px;
+
+    border-radius:20px;
+
+}
+
+}
