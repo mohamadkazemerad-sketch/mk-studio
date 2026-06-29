@@ -3261,3 +3261,101 @@ section{
 }
 
 }
+
+.project-page{
+
+    max-width:1100px;
+    margin:120px auto;
+    padding:40px;
+    color:white;
+
+}
+
+
+.project-image{
+
+    width:100%;
+    height:520px;
+    object-fit:cover;
+
+    border-radius:30px;
+
+    margin:50px 0;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,0.5);
+
+}
+
+
+.project-info{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+
+.info-box{
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    border:1px solid #38bdf8;
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+@media(max-width:768px){
+
+.project-page{
+
+    padding:20px;
+
+}
+
+
+.project-image{
+
+    height:260px;
+
+}
+
+
+.project-info{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
