@@ -3292,3 +3292,67 @@ section{
 }
 
 }
+
+/* FIX PROJECT IMAGES */
+
+/* عکس های کارت صفحه اصلی */
+.project-card .project-image{
+
+    width:100%;
+
+    height:260px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+/* عکس داخل صفحه هر پروژه */
+.project-page img.project-image{
+
+    width:100% !important;
+
+    max-width:900px !important;
+
+    height:420px !important;
+
+    object-fit:cover !important;
+
+    display:block !important;
+
+    margin:50px auto !important;
+
+    border-radius:28px !important;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.45);
+
+}
+
+
+/* موبایل */
+@media(max-width:768px){
+
+    .project-card .project-image{
+
+        height:220px;
+
+    }
+
+
+    .project-page img.project-image{
+
+        height:250px !important;
+
+        width:100% !important;
+
+    }
+
+}
