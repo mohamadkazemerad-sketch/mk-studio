@@ -3,6 +3,11 @@ import * as THREE from "three";
 
 const container = document.querySelector(".hero-3d");
 
+if(!container){
+    console.log("hero-3d not found");
+}else{
+    console.log("three loaded");
+}
 
 const scene = new THREE.Scene();
 
