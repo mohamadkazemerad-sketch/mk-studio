@@ -1,5 +1,5 @@
 import "./style.css";
-import "./three/scene.js";
+// import "./three/scene.js";
 
 
 const header = document.querySelector("header");
