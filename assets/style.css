@@ -3258,3 +3258,26 @@ section{
     background:#0a0a0a;
 
 }
+
+.project-page .project-image{
+
+    width: 100% !important;
+
+    max-width: 900px !important;
+
+    height: 420px !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+
+    margin: 40px auto !important;
+
+    border-radius: 30px !important;
+
+    border: 2px solid rgba(255,255,255,0.2) !important;
+
+    box-shadow:
+    0 25px 80px rgba(0,0,0,0.6) !important;
+
+} 
