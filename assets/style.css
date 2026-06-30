@@ -508,7 +508,7 @@ nav a:hover::after{
 
 .project-card{
 
-    width:330px;
+    width:33px;
 
     padding:25px;
 
@@ -3205,154 +3205,98 @@ section{
 
 }
 
-.reveal{
-    opacity:1 !important;
-    transform:none !important;
-}
-
-.project-image{
-
-    width:100%;
-    max-width:850px;
-
-    height:420px;
-
-    object-fit:cover;
-
-    display:block;
-
-    margin:45px auto;
-
-    border-radius:24px;
-
-    border:1px solid rgba(255,255,255,0.15);
-
-    box-shadow:
-    0 20px 60px rgba(0,0,0,0.55),
-    0 0 40px rgba(56,189,248,0.15);
-
-    transition:0.4s ease;
-
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
-.project-image:hover{
-
-    transform:scale(1.02);
-
-}
-
-.project-page{
-
-    max-width:1000px;
-
-    margin:120px auto;
-
-    padding:30px;
-
+.project-card {
+  background: #0a1020;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: .4s ease;
 }
 
 
-.project-image{
-
-    background:#0a0a0a;
-
+.project-card:hover {
+  transform: translateY(-12px);
 }
 
-.project-page .project-image{
 
-    width: 85%;
+.project-image {
+  height: 200px;
+  overflow: hidden;
+}
 
-    height: 450px;
 
-    object-fit: cover;
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .6s ease;
+}
 
-    display: block;
 
-    margin: 50px auto;
+.project-card:hover img {
+  transform: scale(1.1);
+}
 
+
+.project-content {
+  padding: 25px;
+}
+
+
+.project-content h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+
+.project-content p {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+
+.project-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #2563ff;
+  color: white;
+  text-decoration: none;
+}
+
+.project-detail-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 520px;
+    margin: 40px auto;
+    overflow: hidden;
     border-radius: 30px;
-
-    border: 1px solid rgba(255,255,255,0.15);
-
-    box-shadow: 0 25px 70px rgba(0,0,0,0.5);
-
-}
-
-@media(max-width:768px){
-
-.project-page .project-image{
-
-    width:100%;
-
-    height:250px;
-
-    border-radius:20px;
-
-}
-
-}
-
-/* FIX PROJECT IMAGES */
-
-/* عکس های کارت صفحه اصلی */
-.project-card .project-image{
-
-    width:100%;
-
-    height:260px;
-
-    overflow:hidden;
-
-    border-radius:24px;
-
-    background-size:cover;
-
-    background-position:center;
-
+    background: #0b1228;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
 }
 
 
-/* عکس داخل صفحه هر پروژه */
-.project-page img.project-image{
-
-    width:100% !important;
-
-    max-width:900px !important;
-
-    height:420px !important;
-
-    object-fit:cover !important;
-
-    display:block !important;
-
-    margin:50px auto !important;
-
-    border-radius:28px !important;
-
-    overflow:hidden;
-
-    box-shadow:0 25px 70px rgba(0,0,0,.45);
-
+.project-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .6s ease;
 }
 
 
-/* موبایل */
-@media(max-width:768px){
-
-    .project-card .project-image{
-
-        height:220px;
-
-    }
-
-
-    .project-page img.project-image{
-
-        height:250px !important;
-
-        width:100% !important;
-
-    }
-
+.project-detail-image:hover img {
+    transform: scale(1.04);
 }
